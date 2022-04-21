@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'japanstyle_1';
+    src: url("../font/NightinTokyo.ttf");
+}
+
+.mobile_only_message{
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: block;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html{
+    height: 100%;
+    background-image: url("../assets/background.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+@media only screen and (max-width: 600px) {
+    .mobile_only_message{
+        display:none;
+    }
+    .main_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo img{
+        width: 150px;
+    }
+    .menu_container{
+        
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .menu_item{
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 210px;
+        align-items: center;
+        margin-bottom: -70px;
+    }
+    .menu_item img{
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+    .menu_name h2{
+        font-size: 30px;
+        font-family: 'japanstyle_1';
+        border: 2px solid black;
+        border-radius: 13px;
+        padding: 5px;
+    }
+    .menu_item_name{
+        margin-top: -10px;
+        font-family: 'japanstyle_1';
+        color: white;
+        font-size: 20px;
+        text-shadow: 0px 0px 5px black;
+        word-wrap: break-word;
+        text-align: center;
+    }
+    .menu_item_numbers{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .menu_item_price{
+        background-image: url("../assets/price_tag.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50px;
+        width: 50px;
+        
+        z-index: 5;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: 'japanstyle_1';
+        transform: rotateZ(40deg) translateY(18px) translateX(29px);;
+    }
+    .menu_item_id{
+        font-family: 'japanstyle_1';
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        transform: rotateZ(-30deg) translateY(37px) translateX(-20px);
+        text-shadow: 1px -1px 5px black;
+    }
+  }
+
+@media only screen and (max-width: 400px){
+	/*Small smartphones [325px -> 425px]*/  
+    .menu_item{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+}
+
+  /* The Modal (background) */
+.modal {
+   
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 6; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+      border-radius: 10px;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal_image{
+      width: 100%;
+      border-radius: 10px;
+  }
