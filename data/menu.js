@@ -1,46 +1,63 @@
 const menu = [
     {
-        id: 1,
-        name: 'Burger',
-        desc : "molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium",
-        price : '50DH',
-        image : "./assets/1.jpg"
+        id: 85,
+        name: 'Scampi',
+        subtitle : 'Bol de nouilles fines japonaise sautées a légumes',
+        desc : "Yaki soba noodles<br>Chicken<br>Cabbage<br>Courgette<br>Pepper<br>Onion<br>",
+        price : '13.99€',
+        image : "./assets/85.png"
     },
     {
-        id: 2,
-        name: 'Pasta',
-        desc : "molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium",
-        price : "60DH",
-        image : "./assets/2.jpg"
+        id: 86,
+        name: 'boeuf',
+        subtitle : 'Bol de nouilles fines japonaise sautées a légumes',
+        desc : "Yaki soba noodles<br>Chicken<br>Cabbage<br>Courgette<br>Pepper<br>Onion<br>",
+        price : '13.99€',
+        image : "./assets/86.png"
     },
     {
-        id: 3,
-        name: 'Sushi',
-        desc : "molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium",
-        price : "70DH",
-        image : "./assets/3.jpg"
+        id: 87,
+        name: 'Végétarien',
+        subtitle : 'Bol de nouilles fines japonaise sautées a légumes',
+        desc : "Yaki soba noodles<br>Chicken<br>Cabbage<br>Courgette<br>Pepper<br>Onion<br>",
+        price : '13.99€',
+        image : "./assets/87.png"
     },
     {
-        id: 4,
-        name: 'Pizza',
-        desc : "molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium",
-        price : "55DH",
-        image : "./assets/4.jpg"
+        id: 88,
+        subtitle : 'Bol de nouilles fines japonaise sautées a légumes',
+        name: 'Poulet',
+        desc : "Yaki soba noodles<br>Chicken<br>Cabbage<br>Courgette<br>Pepper<br>Onion<br>",
+        price : '13.99€',
+        image : "./assets/88.png"
 
     },
+    
+]
+
+const menu_2 = [
     {
-        id: 5,
-        name: 'Couscous',
-        desc : "molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium",
-        price : "60DH",
-        image : "./assets/5.jpg"
+        id: 89,
+        name: 'Teriyaki poulet',
+        subtitle : 'Bol de nouilles fines japonaise sautées a légumes',
+        desc : "Yaki soba noodles<br>Chicken<br>Cabbage<br>Courgette<br>Pepper<br>Onion<br>",
+        price : '13.99€',
+        image : "./assets/89.png"
     },
     {
-        id: 6,
-        name: 'Salad',
-        desc : "molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium",
-        price : "40DH",
-        image : "./assets/6.jpg"
-
-    }
+        id: 90,
+        name: 'Teriyaki poulet epicé',
+        subtitle : 'Bol de nouilles fines japonaise sautées a légumes',
+        desc : "Yaki soba noodles<br>Chicken<br>Cabbage<br>Courgette<br>Pepper<br>Onion<br>",
+        price : '13.99€',
+        image : "./assets/90.png"
+    },
+    {
+        id: 91,
+        name: 'Teriyaki boeuf epicé',
+        subtitle : 'Bol de nouilles fines japonaise sautées a légumes',
+        desc : "Yaki soba noodles<br>Chicken<br>Cabbage<br>Courgette<br>Pepper<br>Onion<br>",
+        price : '13.99€',
+        image : "./assets/91.png"
+    },
 ]

@@ -2,7 +2,18 @@
     font-family: 'japanstyle_1';
     src: url("../font/NightinTokyo.ttf");
 }
-
+@font-face {
+    font-family: 'japonola';
+    src: url("../font/Japanola.ttf.ttf");
+}
+@font-face {
+    font-family: 'californication';
+    src: url("../font/The-Californication.ttf");
+}
+@font-face {
+    font-family: 'myriadarabic';
+    src: url("../font/Myriad\ Arabic\ Regular.ttf");
+}
 .mobile_only_message{
     position: fixed;
     background-color: white;
@@ -22,7 +33,7 @@
 html{
     height: 100%;
     
-    background-image: url("../assets/background.png");
+    background-image: url("../assets/background_2.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -40,7 +51,7 @@ html{
         width: 150px;
     }
     .menu_container{
-        
+        margin-bottom: 40px;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -61,21 +72,42 @@ html{
         width: 100px;
         height: 100px;
     }
+    .menu_name_image{
+        display: flex;
+        justify-content: center ;
+        margin-top: -6px;
+    }
+    .menu_name{
+        margin-top: 20px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        height:fit-content;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .menu_name img{
+        height: 60px;
+    }
     .menu_name h2{
         font-size: 30px;
         font-family: 'japanstyle_1';
-        border: 2px solid black;
-        border-radius: 13px;
-        padding: 5px;
+        margin: 0px;
+        margin-top: 4px;
+        margin-right: 10px;
+        color: white;
     }
     .menu_item_name{
-        margin-top: -10px;
-        font-family: 'japanstyle_1';
+        margin-top: -20px;
+        font-family: 'californication';
         color: white;
-        font-size: 20px;
-        text-shadow: 0px 0px 5px black;
+        font-size: 27px;
+        text-shadow: 0px 0px 10px black;
         word-wrap: break-word;
         text-align: center;
+        font-weight: normal;
     }
     .menu_item_numbers{
         display: flex;
@@ -91,17 +123,17 @@ html{
         width: 50px;
         
         z-index: 5;
-       
+       font-size: 12px;
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
-        font-family: 'japanstyle_1';
+        font-family: 'japonola';
         transform: rotateZ(40deg) translateY(18px) translateX(29px);;
     }
     .menu_item_id{
-        font-family: 'japanstyle_1';
-        font-size: 30px;
+        font-family: 'japonola';
+        font-size: 25px;
         font-weight: bold;
         color: white;
         transform: rotateZ(-30deg) translateY(37px) translateX(-20px);
@@ -134,15 +166,38 @@ html{
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
-  
+  .modal_title{
+      text-align: center;
+      color: white;
+  }
+  .modal_subtitle{
+      text-align: center;
+      font-family: 'californication';
+      margin-top: -18px;
+      color: white;
+      font-size: 21px;
+      font-weight: normal;
+  }
+  .modal_ing_title{
+      font-family: 'californication';
+      color: white;
+  }
+  .modal_desc{
+      font-family: "myriadarabic";
+      font-size: 20px;
+      color: white;
+      margin-top: -10px;
+      
+  }
   /* Modal Content */
   .modal-content {
-      margin: 10px;
-      border-radius: 10px;
-    background-color: #fefefe;
+    margin: 10px;
+    border-radius: 10px;
+    background: rgb(2,0,36);
+    background: linear-gradient(360deg, rgba(2,0,36,0.7287289915966386) 0%, rgba(165,72,153,0.6951155462184874) 100%);
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
+    
     width: 80%;
   }
   
