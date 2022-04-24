@@ -34,16 +34,18 @@ Array.from(document.querySelectorAll('.menu_item')).map((item) => {
             ModalState = false;
         }
         else {
-            document.querySelector('.modal').style.display = 'block';
+            document.querySelector('.modal').style.display = 'flex';
             ModalState = true;
             const id = item.id;
             console.log(id)
             console.log(menu)
             //get the object that have 
-            const current_item = menu.filter((item)=> item.id == id)[0];
+            //concat menu and menu_2
+
+            const current_item = menu.concat(menu_2).filter((item)=> item.id == id)[0];
             console.log(current_item)
             
-            document.querySelector('.modal_title').innerHTML =current_item.id +". " +current_item.name;
+            document.querySelector('.modal_title').innerHTML =current_item.id +". " +( menu_2.includes(current_item) ? "Donburi "+current_item.type : "Yaki Soba "+current_item.type);
             document.querySelector('.modal_subtitle').innerHTML = current_item.subtitle;
             document.querySelector('.modal_desc').innerHTML = current_item.desc;
             

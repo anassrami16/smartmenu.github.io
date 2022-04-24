@@ -31,12 +31,18 @@
 }
 
 html{
-    height: 100%;
-    
+    height: max(fit-content , 100%) ;
     background-image: url("../assets/background_2.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    
+}
+body{
+    height : 100%;
+    width: 100%;
+    margin : 0px !important;
+    
 }
 @media only screen and (max-width: 600px) {
     .mobile_only_message{
@@ -100,10 +106,10 @@ html{
         color: white;
     }
     .menu_item_name{
-        margin-top: -20px;
+        margin-top: -16px;
         font-family: 'californication';
         color: white;
-        font-size: 27px;
+        font-size: 22px;
         text-shadow: 0px 0px 10px black;
         word-wrap: break-word;
         text-align: center;
@@ -155,6 +161,7 @@ html{
    
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
+    justify-content: center;
     z-index: 6; /* Sit on top */
     padding-top: 20px;
     left: 0;
@@ -191,11 +198,12 @@ html{
   }
   /* Modal Content */
   .modal-content {
+
+    justify-self: center;
     margin: 10px;
     border-radius: 10px;
     background: rgb(2,0,36);
-    background: linear-gradient(360deg, rgba(2,0,36,0.7287289915966386) 0%, rgba(165,72,153,0.6951155462184874) 100%);
-    margin: auto;
+    background: linear-gradient(360deg, rgba(2,0,36,0.8827906162464986) 0%, rgba(165,72,153,0.9248074229691877) 100%);
     padding: 20px;
     
     width: 80%;
